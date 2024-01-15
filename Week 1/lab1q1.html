@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery q1</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type = "text/javascript" language = "javascript">
+    $(document).ready(function () 
+    {
+        $("button").click(function () 
+        {
+             $("#wrapper").css("justify-content", "flex-start");
+        })
+    })
+    </script>
+
+    <style>
+        td{
+            padding: 1rem;
+        }
+        #wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+        button{
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <table>
+                <tr>
+                    <td bgcolor="blue">Jan</td>
+                    <td bgcolor="blue">Feb</td>
+                    <td bgcolor="blue">Mar</td>
+                </tr>
+                <tr>
+                    <td bgcolor="pink">Apr</td>
+                    <td bgcolor="pink">May</td>
+                    <td bgcolor="pink">Jun</td>
+                </tr>
+                <tr>
+                    <td bgcolor="blue">Jul</td>
+                    <td bgcolor="blue">Aug</td>
+                    <td bgcolor="blue">Sep</td>
+                </tr>
+            </table>
+            <img src="manipal.jpg" alt="college image" width="200" height="200">
+        </div>
+        <button type="button">Move right to left!</button>
+    </div>
+</body>
+</html>
+
+
+
+
